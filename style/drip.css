@@ -7,6 +7,7 @@
     grid-template-areas: 
     "header header header"
     "obsah obsah reklamy"
+    "obsah obsah galerie"
     "zapati zapati zapati";
 }
 
@@ -32,12 +33,35 @@
 
 #obsah {
     grid-area: obsah;
+    background-color: gray;
 }
 
 #reklamy {
     grid-area: reklamy;
+    background-color: yellow;
+}
+
+#galerie {
+    grid-area: galerie;
 }
 
 #zapati {
     grid-area: zapati;
+    background-color: red;
 }
+
+.gridfit {
+    display: grid;
+    height: 200px;
+    grid-template-columns: 50px repeat(auto-fill, 200px) 50px;
+}
+
+.gridder {
+    display:grid;
+    grid-template-columns: 200px fit-content(25%);
+}
+
+/* .bloker {
+    width: 50px;
+    height
+} */
