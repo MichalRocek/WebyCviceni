@@ -98,16 +98,26 @@
 }
 
 .biscuit {
-    position: sticky;
+    position: fixed;
+    border: solid black 1px;
+    height: 200px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: rgb(0, 255, 153);
+}
+
+.biscuit > a, .bar > a {
+    display: inline-block;
+    padding: 2em;
+}
+
+.bar {
+    position:sticky;
     border: solid black 1px;
     height: 200px;
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgb(0, 255, 153);
-}
-
-.biscuit > a {
-    display: inline-block;
-    padding: 2em;
+    background-color: rgb(0, 60, 255);
 }
